@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+.container_row{
+  margin: 5rem 1rem;
+}
+.col_left,.col_right{
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width:1024px){
+  .container_row{
+    margin: 5rem 1rem;
+  }
+  .col_left,.col_right{
+    padding: 0 1.5rem;
+  }
+}
+@media only screen and (max-width:767px){
+  .col_left,.col_right{
+    padding: 0;
+  }
+}
