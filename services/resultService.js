@@ -6,5 +6,11 @@ export async function getResult(arr){
             rollNumber:arr
         }
     })
-    return response.data
+    console.log(response.status)
+    if (response.status==200){
+        return response.data
+    }
+    else{
+        return [{rollNumber:"Data Not Avaliable",result:"For entered Roll Number"}]
+    }
 }
